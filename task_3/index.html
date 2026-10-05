@@ -14,19 +14,33 @@
       <p>Silakan isi data diri Anda di bawah ini dengan lengkap.</p>
     </header>
 
-    <!-- Form melempar data ke detail.html via Query String GET -->
     <form action="detail.html" method="GET" class="form-box">
       <fieldset class="fieldset-box">
         <legend>Data Diri Pendaftar</legend>
 
         <div class="form-group">
           <label for="nama">Nama Lengkap:</label>
-          <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+          <input 
+            type="text" 
+            id="nama" 
+            name="nama" 
+            placeholder="Masukkan nama lengkap" 
+            pattern="[A-Za-z\s]+" 
+            title="Nama hanya boleh berisi huruf dan spasi" 
+            required>
         </div>
 
         <div class="form-group">
           <label for="nim">NIM:</label>
-          <input type="text" id="nim" name="nim" placeholder="Contoh: 123140080" required>
+          <input 
+            type="text" 
+            id="nim" 
+            name="nim" 
+            placeholder="Contoh: 123140080" 
+            pattern="[0-9]+" 
+            inputmode="numeric" 
+            title="NIM hanya boleh berisi angka" 
+            required>
         </div>
 
         <div class="form-group">
