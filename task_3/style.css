@@ -17,7 +17,6 @@ label {
   display: block;
 }
 
-/* Styling Input & Control Form */
 input[type="text"],
 input[type="email"],
 select,
@@ -25,14 +24,16 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 6px; /* Border Radius sesuai materi */
+  border-radius: 6px;
   box-sizing: border-box;
   font-size: 14px;
 }
+
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 680px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -41,7 +42,6 @@ textarea {
   margin-bottom: 20px;
 }
 
-/* Desain Box Model */
 .form-box, .card-box {
   background-color: #ffffff;
   width: 100%;
@@ -73,7 +73,6 @@ textarea {
   align-items: center;
 }
 
-/* Styling Tombol */
 .btn-primary {
   background-color: #16a085;
   color: white;
@@ -97,9 +96,10 @@ textarea {
   margin-top: 20px;
 }
 
+/* Desain Tabel CSS */
 .data-table {
   width: 100%;
-  border-collapse: collapse; /* Border collapse tunggal */
+  border-collapse: collapse;
   margin-top: 15px;
   font-size: 15px;
 }
@@ -113,7 +113,7 @@ textarea {
 }
 
 .data-table th {
-  background-color: #16a085; /* Header bertema khusus */
+  background-color: #16a085;
   color: white;
   padding: 12px;
   text-align: left;
@@ -142,12 +142,10 @@ textarea {
   transition: background-color 0.3s;
 }
 
-/* Pseudo-class: Zebra Stripes (Materi Slide 13) */
 .data-table tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-/* Pseudo-class: Hover Effect pada Baris Tabel (Materi Slide 12) */
 .data-table tbody tr:hover {
   background-color: #eef9f6;
   transition: background-color 0.2s ease-in-out;
