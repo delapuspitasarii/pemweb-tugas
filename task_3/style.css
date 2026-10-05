@@ -1,0 +1,154 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Styling Input & Control Form */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Border Radius sesuai materi */
+  box-sizing: border-box;
+  font-size: 14px;
+}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.header-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Desain Box Model */
+.form-box, .card-box {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.fieldset-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.fieldset-box legend {
+  font-weight: bold;
+  color: #16a085;
+  padding: 0 10px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Styling Tombol */
+.btn-primary {
+  background-color: #16a085;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: #7f8c8d;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse; /* Border collapse tunggal */
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.data-table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #7f8c8d;
+}
+
+.data-table th {
+  background-color: #16a085; /* Header bertema khusus */
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.data-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.status-badge {
+  background-color: #2ecc71;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.action-box {
+  text-align: right;
+}
+
+#submit-btn:hover {
+  background-color: #117a65;
+  transition: background-color 0.3s;
+}
+
+/* Pseudo-class: Zebra Stripes (Materi Slide 13) */
+.data-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Pseudo-class: Hover Effect pada Baris Tabel (Materi Slide 12) */
+.data-table tbody tr:hover {
+  background-color: #eef9f6;
+  transition: background-color 0.2s ease-in-out;
+}
