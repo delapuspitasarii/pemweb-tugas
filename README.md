@@ -4,7 +4,7 @@ Repository ini berisi hasil pengerjaan **Tugas 3** mata kuliah Pengembangan apli
 
 ---
 
-## 👤 Identitas Mahasiswa
+## Identitas Mahasiswa
 * **Nama** : Dela Puspita Sari
 * **NIM** : 123140080
 * **Kelas** : RB
@@ -12,7 +12,7 @@ Repository ini berisi hasil pengerjaan **Tugas 3** mata kuliah Pengembangan apli
 
 ---
 
-## 📁 Struktur Folder Project
+## Struktur Folder Project
 
 ```text
 task_3/
