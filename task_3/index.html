@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Mahasiswa Baru</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Box Layout Utama (Flexbox Container) -->
+  <div class="main-container">
+    <header class="header-box">
+      <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+      <p>Silakan isi data diri Anda di bawah ini dengan lengkap.</p>
+    </header>
+
+    <!-- Form dengan method GET yang melempar Query String ke detail.html -->
+    <form action="detail.html" method="GET" class="form-box">
+      <fieldset class="fieldset-box">
+        <legend>Data Diri Pendaftar</legend>
+
+        <div class="form-group">
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        </div>
+
+        <div class="form-group">
+          <label for="nim">NIM / No. Reg:</label>
+          <input type="text" id="nim" name="nim" placeholder="Contoh: 119140008" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Alamat Email:</label>
+          <input type="email" id="email" name="email" placeholder="contoh@itera.ac.id" required>
+        </div>
+
+        <div class="form-group">
+          <label>Jenis Kelamin:</label>
+          <div class="radio-group">
+            <input type="radio" id="pria" name="gender" value="Laki-laki" checked>
+            <label for="pria">Laki-laki</label>
+            <input type="radio" id="wanita" name="gender" value="Perempuan">
+            <label for="wanita">Perempuan</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="prodi">Program Studi:</label>
+          <select id="prodi" name="prodi" required>
+            <option value="">-- Pilih Program Studi --</option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Teknik Elektro">Teknik Elektro</option>
+            <option value="Sains Data">Sains Data</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="alamat">Alamat Tinggal:</label>
+          <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap"></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn-primary">Daftar Sekarang</button>
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+</html>
